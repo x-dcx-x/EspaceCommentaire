@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#ecrireUnComment{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+#contentPrenomNom{
+    display: flex;
+    justify-content: left;
+    align-content: space-between;
+    margin-bottom: 3rem;
+    }
+
+#textnom,#textnomtitre{
+    /*margin-left: 8rem;*/
+}
+
+#com{
+    display: flex;
+    justify-content: center;
+}
+
+#but{
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+}
+
+#envoyer{
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+}
