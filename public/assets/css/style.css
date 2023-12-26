@@ -27,17 +27,29 @@ html {
     justify-content: left;
     align-content: space-between;
     margin-bottom: 3rem;
+
     }
 
 #textnom,#textnomtitre{
     display: flex;
     justify-content: space-between;
     margin-left: 7rem;
+
 }
 
+/*textarea{*/
+/*    */
+
+/*}*/
+#titrecom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 #com{
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 #but{
