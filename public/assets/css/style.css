@@ -33,14 +33,12 @@ html {
 #textnom,#textnomtitre{
     display: flex;
     justify-content: space-between;
-    margin-left: 7rem;
+    margin-left: 8.7rem;
+
 
 }
 
-/*textarea{*/
-/*    */
 
-/*}*/
 #titrecom{
     display: flex;
     justify-content: space-between;
