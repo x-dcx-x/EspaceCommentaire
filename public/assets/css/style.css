@@ -30,7 +30,9 @@ html {
     }
 
 #textnom,#textnomtitre{
-    /*margin-left: 8rem;*/
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
 }
 
 #com{
