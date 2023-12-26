@@ -61,5 +61,7 @@ html {
 #envoyer{
     display: flex;
     justify-content: center;
+    background-color: aquamarine;
+    border-radius: 10px;
     width: 8rem;
 }
