@@ -28,13 +28,14 @@ button.addEventListener("click", function () {
             comEnvoyer.appendChild(coms);
             coms.className = "com";
             coms.innerHTML += textcom.value;
-            coms.value.style.width = "65%";
+
         }
 
         let barre = document.createElement("p");
         comEnvoyer.appendChild(barre);
         barre.className = "barre";
         barre.style.borderBottom = "1px solid black";
+        barre.style.opacity ="10%";
 
         if (textprenom.value.trim() === "" || textnom.value.trim() === "" || textcom.value.trim() === "") {
             barre.style.display = "none";
@@ -45,15 +46,6 @@ button.addEventListener("click", function () {
         textprenom.value = " ";
         textnom.value = " ";
         textcom.value = " ";
-
-
-
     }
 
 })
-
-
-
-
-
-

@@ -8,15 +8,10 @@ html {
     font-size: 65.5%;
     display: flex;
     justify-content: center;
-    width: 100%
-}
-body{
-    width: 33.5%;
 }
 
 #comEnvoyer{
     margin-bottom: 5rem;
-
 }
 #nomPrenom{
 padding: 1vw;
@@ -25,20 +20,21 @@ padding: 1vw;
 /*    margin-left: 1vw;*/
 /*    font-size: 1.2vw;*/
 /*    width: 30vw;*/
-}
+/*}*/
 #content{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-
-
 }
+
 #ecrireUnComment{
     display: flex;
     justify-content: left;
     padding-bottom: 1rem;
     margin-top: 2rem;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+
 
 }
 #contentPrenomNom{
@@ -53,6 +49,14 @@ padding: 1vw;
     display: flex;
     justify-content: space-between;
     margin-left: 9.2rem;
+    font-size: 1vw;
+
+
+
+}
+#prenom{
+    font-size: 1vw;
+
 
 }
 
@@ -60,18 +64,16 @@ padding: 1vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
 }
 .com{
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
+    display: block;
     margin-top: 1rem;
     font-size: 1.2vw;
     padding: 0.8vw;
-
-
+    width: 33.5vw;
 }
-
 
 .prenomcom{
     font-size: 1.2vw;
@@ -93,6 +95,6 @@ padding: 1vw;
     background-color: aquamarine;
     border-spacing:2vw;
     border-radius: 5px;
-    height: 1.5vw;
+    height: 2vw;
     width: 8rem;
 }
