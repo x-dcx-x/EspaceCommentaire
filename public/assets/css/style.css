@@ -8,11 +8,24 @@ html {
     font-size: 65.5%;
     display: flex;
     justify-content: center;
+    width: 100%
+}
+#comEnvoyer{
+    margin-bottom: 5rem;
+
+}
+#nomPrenom{
+padding: 1vw;
+}
+#coms{
+    margin-left: 1vw;
+    width: 30vw;
 }
 #content{
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 
 }
 #ecrireUnComment{
@@ -33,9 +46,10 @@ html {
 #textnom,#textnomtitre{
     display: flex;
     justify-content: space-between;
-    margin-left: 8.7rem;
+    margin-left: 9.2rem;
 
 }
+
 
 #titrecom{
     display: flex;
@@ -56,8 +70,13 @@ html {
 
 #envoyer{
     display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
     justify-content: center;
     background-color: aquamarine;
-    border-radius: 10px;
+    border-spacing:2vw;
+    border-radius: 5px;
+    height: 1.5vw;
     width: 8rem;
 }
