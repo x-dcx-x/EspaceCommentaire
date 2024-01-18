@@ -3,13 +3,10 @@ let textnom = document.getElementById("textnom");
 let textcom = document.getElementById("textcom");
 let comEnvoyer = document.getElementById("comEnvoyer");
 let button = document.getElementById("envoyer");
-//////////// Commentaire recuperer /////////////
-let nomPrenom = document.getElementById("nomPrenom");
-let barrehtml = document.getElementById(" barrehtml");
-// let content =document.getElementById("content");
-
 
 button.addEventListener("click", function () {
+
+
 
 
     let PrenomComs = document.createElement("p");
@@ -32,7 +29,7 @@ button.addEventListener("click", function () {
     barre.className = "barre";
     barre.style.borderBottom = "1px solid black";
 
-
+///////// reset of formulaire//////
     textprenom.value = " ";
     textnom.value = " ";
     textcom.value = " ";
