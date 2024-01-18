@@ -7,12 +7,14 @@ let button = document.getElementById("envoyer");
 let nomPrenom = document.getElementById("nomPrenom");                                                                               ;
 let coms = document.getElementById("coms");
 
-let captureComs= textcom.value;
+let captureComs= coms.value;
 
 
 
 button.addEventListener("click",function (){
-    textcom.value= coms.innerHTML;
-    console.log(coms.value)
+    // captureComs = textcom.value.innerHTML;
+    coms = textcom.value.innerHTML;
+    console.log(textcom.value+"c est le textcom.value");
+    console.log(coms.value.innerHTML);
 } )
 
