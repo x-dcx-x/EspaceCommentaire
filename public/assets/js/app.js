@@ -3,6 +3,7 @@ let textnom = document.getElementById("textnom");
 let textcom = document.getElementById("textcom");
 let comEnvoyer = document.getElementById("comEnvoyer");
 let button = document.getElementById("envoyer");
+let content = document.getElementById("content");
 
 button.addEventListener("click", function () {
 
@@ -27,6 +28,7 @@ button.addEventListener("click", function () {
             comEnvoyer.appendChild(coms);
             coms.className = "com";
             coms.innerHTML += textcom.value;
+            coms.value.style.width = "65%";
         }
 
         let barre = document.createElement("p");
@@ -43,7 +45,11 @@ button.addEventListener("click", function () {
         textprenom.value = " ";
         textnom.value = " ";
         textcom.value = " ";
+
+
+
     }
+
 })
 
 

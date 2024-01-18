@@ -10,6 +10,9 @@ html {
     justify-content: center;
     width: 100%
 }
+body{
+    width: 33.5%;
+}
 
 #comEnvoyer{
     margin-bottom: 5rem;
@@ -18,15 +21,16 @@ html {
 #nomPrenom{
 padding: 1vw;
 }
-#coms{
-    margin-left: 1vw;
-    font-size: 1.2vw;
-    width: 30vw;
+/*#coms{*/
+/*    margin-left: 1vw;*/
+/*    font-size: 1.2vw;*/
+/*    width: 30vw;*/
 }
 #content{
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 
 
 }
@@ -60,11 +64,14 @@ padding: 1vw;
 .com{
     display: flex;
     justify-content: left;
+    flex-direction: column;
     margin-top: 1rem;
     font-size: 1.2vw;
     padding: 0.8vw;
 
+
 }
+
 
 .prenomcom{
     font-size: 1.2vw;
