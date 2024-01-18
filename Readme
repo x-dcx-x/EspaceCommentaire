@@ -13,3 +13,5 @@ et envoie un message vide  il y a un message d erreur veuillez remplir ce champ 
 // supprimer le formulaire une fois qu il est dans la liste
 
 //pas de ré-actialisation pendants que le user ecrit
+
+si le .value est vide alors je peut cacher le p / la barre
