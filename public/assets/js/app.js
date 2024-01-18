@@ -4,17 +4,39 @@ let textcom = document.getElementById("textcom");
 let comEnvoyer = document.getElementById("comEnvoyer");
 let button = document.getElementById("envoyer");
 //////////// Commentaire recuperer /////////////
-let nomPrenom = document.getElementById("nomPrenom");                                                                               ;
-let coms = document.getElementById("coms");
-
-let captureComs= coms.value;
-
+let nomPrenom = document.getElementById("nomPrenom");
+let barrehtml = document.getElementById(" barrehtml");
+// let content =document.getElementById("content");
 
 
-button.addEventListener("click",function (){
-    // captureComs = textcom.value.innerHTML;
-    coms = textcom.value.innerHTML;
-    console.log(textcom.value+"c est le textcom.value");
-    console.log(coms.value.innerHTML);
-} )
+button.addEventListener("click", function () {
+
+
+    let PrenomComs = document.createElement("p");
+    comEnvoyer.appendChild(PrenomComs);
+    PrenomComs.className = "prenomcom";
+    PrenomComs.innerHTML += textprenom.value
+
+    let nom = document.createElement("span")
+    PrenomComs.appendChild(nom);
+    nom.innerHTML += " " + textnom.value;
+
+    let coms = document.createElement("p");
+    comEnvoyer.appendChild(coms);
+    coms.className = "com";
+    coms.innerHTML += textcom.value;
+
+
+    let barre = document.createElement("p");
+    comEnvoyer.appendChild(barre);
+    barre.className = "barre";
+    barre.style.borderBottom = "1px solid black";
+
+
+    textprenom.value = " ";
+    textnom.value = " ";
+    textcom.value = " ";
+
+
+})
 

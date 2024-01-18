@@ -10,6 +10,7 @@ html {
     justify-content: center;
     width: 100%
 }
+
 #comEnvoyer{
     margin-bottom: 5rem;
 
@@ -19,6 +20,7 @@ padding: 1vw;
 }
 #coms{
     margin-left: 1vw;
+    font-size: 1.2vw;
     width: 30vw;
 }
 #content{
@@ -50,17 +52,25 @@ padding: 1vw;
 
 }
 
-
 #titrecom{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-#com{
+.com{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 1rem;
+    font-size: 1.2vw;
+    padding: 0.8vw;
+
 }
+
+.prenomcom{
+    font-size: 1.2vw;
+    padding: 0.8vw;
+}
+
 
 #but{
     display: flex;
