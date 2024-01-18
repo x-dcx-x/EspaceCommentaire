@@ -22,7 +22,8 @@ button.addEventListener("click", function () {
         PrenomComs.appendChild(nom);
         nom.innerHTML += " " + textnom.value;
 
-       // verification que le champs de com est vide
+
+        // check that the com field is empty
         if (textcom.value.trim() !== "") {
             let coms = document.createElement("p");
             comEnvoyer.appendChild(coms);

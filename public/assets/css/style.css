@@ -10,64 +10,56 @@ html {
     justify-content: center;
 }
 
-#comEnvoyer{
+#comEnvoyer {
     margin-bottom: 5rem;
 }
-#nomPrenom{
-padding: 1vw;
+
+#nomPrenom {
+    padding: 1vw;
 }
-/*#coms{*/
-/*    margin-left: 1vw;*/
-/*    font-size: 1.2vw;*/
-/*    width: 30vw;*/
-/*}*/
-#content{
+
+#content {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#ecrireUnComment{
+#ecrireUnComment {
     display: flex;
     justify-content: left;
     padding-bottom: 1rem;
     margin-top: 2rem;
     font-size: 1vw;
     margin-bottom: 0.5vw;
-
-
 }
-#contentPrenomNom{
+
+#contentPrenomNom {
     display: flex;
     justify-content: left;
     align-content: space-between;
     margin-bottom: 3rem;
+}
 
-    }
-
-#textnom,#textnomtitre{
+#textnom, #textnomtitre {
     display: flex;
     justify-content: space-between;
     margin-left: 9.2rem;
     font-size: 1vw;
-
-
-
 }
-#prenom{
+
+#prenom {
     font-size: 1vw;
-
-
 }
 
-#titrecom{
+#titrecom {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     font-size: 1vw;
     margin-bottom: 0.5vw;
 }
-.com{
+
+.com {
     display: block;
     margin-top: 1rem;
     font-size: 1.2vw;
@@ -75,25 +67,25 @@ padding: 1vw;
     width: 33.5vw;
 }
 
-.prenomcom{
+.prenomcom {
     font-size: 1.2vw;
     padding: 0.8vw;
 }
 
-#but{
+#but {
     display: flex;
     justify-content: right;
     margin-top: 2rem;
 }
 
-#envoyer{
+#envoyer {
     display: flex;
     text-align: center;
     align-content: center;
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
-    border-spacing:2vw;
+    border-spacing: 2vw;
     border-radius: 5px;
     height: 2vw;
     width: 8rem;
