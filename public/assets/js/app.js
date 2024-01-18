@@ -34,7 +34,7 @@ button.addEventListener("click", function () {
         barre.className = "barre";
         barre.style.borderBottom = "1px solid black";
 
-        if (textprenom.value.trim() === "" || textnom.value.trim() === "" || textcom.value.trim() === "" || barre.trim("p")) {
+        if (textprenom.value.trim() === "" || textnom.value.trim() === "" || textcom.value.trim() === "") {
             barre.style.display = "none";
             barre.style = "none";
         }
