@@ -3,8 +3,6 @@ let textnom = document.getElementById("textnom");
 let textcom = document.getElementById("textcom");
 let comEnvoyer = document.getElementById("comEnvoyer");
 let button = document.getElementById("envoyer");
-let content = document.getElementById("content");
-let titreCom = document.getElementById("titrecom");
 let ecrireUnCom = document.getElementById("ecrireUnComment")
 let erreurAffichee = false;
 
