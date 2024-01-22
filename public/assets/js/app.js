@@ -8,20 +8,6 @@ let titreCom = document.getElementById("titrecom");
 let ecrireUnCom = document.getElementById("ecrireUnComment")
 let erreurAffichee = false;
 
-let messageErreur = document.createElement("p");
-ecrireUnCom.appendChild(messageErreur);
-messageErreur.className = "messageError";
-messageErreur.style.display = "none";
-messageErreur.innerHTML = "Veuillez remplir le(s) champ(s) de formulaire(s)";
-messageErreur.style.justifyContent = "center";
-messageErreur.style.alignItems = "center";
-messageErreur.style.marginTop = "0.5vw";
-messageErreur.style.marginLeft = "2vw";
-messageErreur.style.height = "2vw";
-messageErreur.style.backgroundColor = "palevioletred";
-messageErreur.style.borderRadius = "25px";
-messageErreur.style.opacity = "70%";
-
 button.addEventListener("click", function () {
 
     if (!erreurAffichee) {
@@ -35,7 +21,7 @@ button.addEventListener("click", function () {
         }
 
     else {
-            cacherMessageErreur();
+            hidden();
 
             erreurAffichee = false; // Réinitialiser la variable si les champs sont remplis
 
@@ -81,12 +67,23 @@ function show() {
     messageErreur.style.display = "flex";
 }
 
-function cacherMessageErreur() {
+function hidden() {
     messageErreur.style.display = "none";
 }
 
-
-
+let messageErreur = document.createElement("p");
+ecrireUnCom.appendChild(messageErreur);
+messageErreur.className = "messageError";
+messageErreur.style.display = "none";
+messageErreur.innerHTML = "Veuillez remplir le(s) champ(s) de formulaire(s)";
+messageErreur.style.justifyContent = "center";
+messageErreur.style.alignItems = "center";
+messageErreur.style.marginTop = "0.5vw";
+messageErreur.style.marginLeft = "2vw";
+messageErreur.style.height = "2vw";
+messageErreur.style.backgroundColor = "palevioletred";
+messageErreur.style.borderRadius = "25px";
+messageErreur.style.opacity = "70%";
 
 
 
