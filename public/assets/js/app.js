@@ -6,36 +6,38 @@ let button = document.getElementById("envoyer");
 let content = document.getElementById("content");
 let titreCom = document.getElementById("titrecom");
 let ecrireUnCom = document.getElementById("ecrireUnComment")
+let erreurAffichee = false;
 
+let messageErreur = document.createElement("p");
+ecrireUnCom.appendChild(messageErreur);
+messageErreur.className = "messageError";
+messageErreur.style.display = "none";
+messageErreur.innerHTML = "Veuillez remplir le(s) champ(s) de formulaire(s)";
+messageErreur.style.justifyContent = "center";
+messageErreur.style.alignItems = "center";
+messageErreur.style.marginTop = "0.5vw";
+messageErreur.style.marginLeft = "2vw";
+messageErreur.style.height = "2vw";
+messageErreur.style.backgroundColor = "palevioletred";
+messageErreur.style.borderRadius = "25px";
+messageErreur.style.opacity = "70%";
 
 button.addEventListener("click", function () {
 
+    if (!erreurAffichee) {
+        show();
+        erreurAffichee = true; // Marquer que le message d'erreur a été affiché
+    }
     if (textprenom.value.trim() === "" || textnom.value.trim() === "" || textcom.value.trim() === "") {
-        textprenom.value = " ";
-        textnom.value = " ";
-        textcom.value = " ";
 
-       show()
-        if(textprenom.value.trim() !== "" || textnom.value.trim() !== "" || textcom.value.trim() !== ""){
-
-            cacherMessageErreur ()
-            // console.log(hidden())
-        }
+       show();
 
         }
-
-
-
-        // alert("Veuillez remplir le(s) champ(s) de formulaire(s)");
-
-       // hidden();
-
-
 
     else {
-        cacherMessageErreur ()
+            cacherMessageErreur();
 
-
+            erreurAffichee = false; // Réinitialiser la variable si les champs sont remplis
 
         let PrenomComs = document.createElement("p");
         comEnvoyer.appendChild(PrenomComs);
@@ -75,41 +77,48 @@ button.addEventListener("click", function () {
 
 })
 
-
-function show (){
-    let message = document.createElement("p");
-    ecrireUnCom.appendChild(message);
-    message.className = "messageError"
-    message.style.display = "flex";
-    message.innerHTML = " Veuillez remplir le(s) champ(s) de formulaire(s) ";
-
-    message.style.display = "flex";
-    message.style.justifyContent = "center";
-    message.style.alignItems = "center";
-    message.style.marginTop = " 0.5vw";
-    message.style.marginLeft = "2vw"
-    message.style.height = "2vw";
-    message.style.backgroundColor = "palevioletred";
-    message.style.borderRadius = "25px";
-    message.style.opacity = "70%";
-
-    // noRepeatError()
+function show() {
+    messageErreur.style.display = "flex";
 }
-
-
 
 function cacherMessageErreur() {
-    let msgErreurExistant = document.querySelector(".messageError");
-    if (msgErreurExistant) {
-        msgErreurExistant.style.display = "none";
-
-    }
+    messageErreur.style.display = "none";
 }
-// function noRepeatError (){
-//     if (show() === 1){
-//         show().style.display ="none"
-//     }
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////autre code //////////////////
+
 
 
 // function show() {
