@@ -2,91 +2,110 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
     font-size: 65.5%;
+    }
+
+#allContent{
     display: flex;
-    justify-content: center;
-}
-
-#comEnvoyer {
-    margin-bottom: 5rem;
-}
-
-#nomPrenom {
-    padding: 1vw;
-}
-
-#content {
-    display: flex;
-    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    align-content: center;
     flex-direction: column;
 }
 
-#ecrireUnComment {
+#comEnvoyer{
     display: flex;
-    justify-content: left;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1vw;
+    width: 33%;
+
+}
+
+/*////////////////// JS Dynamic ///////////////////////*/
+.prenomCom {
     font-size: 1vw;
-    margin-bottom: 0.5vw;
+    padding-bottom: 1vw;
+    padding-top: 0.5vw;
 }
-
-#contentPrenomNom {
-    display: flex;
-    justify-content: left;
-    align-content: space-between;
-    margin-bottom: 3rem;
-}
-
-#textnom, #textnomtitre {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 9.2rem;
-    font-size: 1vw;
-}
-
-#prenom {
-    font-size: 1vw;
-}
-
-#titrecom {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 1vw;
-    margin-bottom: 0.5vw;
-}
-
 .com {
-    display: block;
-    margin-top: 1rem;
-    font-size: 1.2vw;
-    padding: 0.8vw;
-    width: 33.5vw;
+    font-size: 1vw;
+    padding: 0.5vw;
+
 }
 
-.prenomcom {
-    font-size: 1.2vw;
-    padding: 0.8vw;
+/*.messageError{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin-top: 0.5vw;*/
+/*    height: 2vw;*/
+/*    background-color: palevioletred;*/
+/*    border-radius: 25px;*/
+/*    opacity: 70%;*/
+
+
+/*}*/
+/*///////////////EcrireUnCom/////////////////*/
+
+#ecrireUnComment{
+    font-size: 1vw;
+    padding-bottom: 1vw;
 }
 
-#but {
+/*/////////////////////ContentNomPrenom//////////////////*/
+
+#contentPrenomNom{
     display: flex;
-    justify-content: right;
-    margin-top: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+    font-size: 1vw;
+
 }
 
-#envoyer {
-    display: flex;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: aquamarine;
-    border-spacing: 2vw;
+/*////////réglage inputNom et prénom++   Style text Area  ////////////////////*/
+
+input#textprenom,input#textnom{
+    width: 16rem;
+    height: 3rem;
     border-radius: 5px;
-    height: 2vw;
-    width: 8rem;
 }
+
+textarea#textcom{
+    border-radius: 5px;
+}
+
+/*//////////////// Titre-Comment /////////////////*/
+
+#titrecom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    padding-bottom: 0.5vw;
+}
+
+/*//////////////////////Buton//////////////////////*/
+
+#but{
+    display: flex;
+    justify-content: end;
+    padding-top: 0.2vw;
+}
+#envoyer{
+background-color: lightcyan;
+height: 2vw;
+border-spacing: 2vw;
+border-radius: 5px;
+width: 8rem;
+}
+
+#envoyer:hover {
+    background-color: aqua;
+}
+
+
+/*///////////////////////////Fin de code ///////////////////*/
